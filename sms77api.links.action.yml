@@ -1,0 +1,11 @@
+sms77api.add_action:
+  appears_on:
+    - entity.sms77api_message.list
+  route_name: entity.sms77api_message.add_form
+  title: Add Message
+
+sms77api.list_action:
+  appears_on:
+    - entity.sms77api_message.add_form
+  route_name: entity.sms77api_message.list
+  title: List Messages

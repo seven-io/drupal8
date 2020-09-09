@@ -1,0 +1,21 @@
+general:
+  apiKey: null
+sms:
+  debug: false
+  details: false
+  flash: false
+  foreign_id: null
+  from: null
+  json: false
+  label: null
+  no_reload: false
+  performance_tracking: false
+  return_msg_id: false
+  signature: null
+  signaturePosition: append
+  text: null
+  to: null
+  ttl: null
+  udh: null
+  unicode: false
+  utf8: false

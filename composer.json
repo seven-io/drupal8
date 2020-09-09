@@ -1,0 +1,14 @@
+{
+  "name": "sms77/drupal8",
+  "description": "Drupal module to send SMS via Sms77.io",
+  "type": "drupal-module",
+  "support": {
+    "issues": "https://github.com/sms77io/drupal8/issues",
+    "source": "https://github.com/sms77io/drupal8"
+  },
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "sms77/api": "1.2.0",
+    "ext-json": "*"
+  }
+}
