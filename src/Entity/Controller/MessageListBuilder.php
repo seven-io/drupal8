@@ -1,15 +1,14 @@
 <?php
 
-namespace Drupal\sms77api\Entity\Controller;
+namespace Drupal\sevenapi\Entity\Controller;
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityListBuilder;
 
 /**
- * @ingroup sms77api
+ * @ingroup sevenapi
  */
 class MessageListBuilder extends EntityListBuilder {
-
   public function buildHeader(): array {
     return [
         'config' => $this->t('Config'),

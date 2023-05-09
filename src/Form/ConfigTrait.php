@@ -1,15 +1,15 @@
 <?php
 
-namespace Drupal\sms77api\Form;
+namespace Drupal\sevenapi\Form;
 
 use Drupal\Core\Config\Config;
 
 /**
- * Defines a form that configures sms77api settings.
+ * Defines a form that configures sevenapi settings.
  */
 trait ConfigTrait {
 
-  private $_editableConfigName = 'sms77api.settings';
+  private $_editableConfigName = 'sevenapi.settings';
 
   protected function getEditableConfigNames(): array {
     return [

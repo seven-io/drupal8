@@ -1,12 +1,12 @@
 <?php
 
-namespace Drupal\sms77api\Form;
+namespace Drupal\sevenapi\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Defines a form that configures sms77api settings.
+ * Defines a form that configures sevenapi settings.
  */
 class AdminConfigForm extends ConfigFormBase {
 
@@ -15,7 +15,7 @@ class AdminConfigForm extends ConfigFormBase {
 
   /** {@inheritdoc} */
   public function getFormId(): string {
-    return 'sms77api_admin_config';
+    return 'sevenapi_admin_config';
   }
 
   /** {@inheritdoc} */
@@ -39,7 +39,7 @@ class AdminConfigForm extends ConfigFormBase {
       '#type' => 'details',
       'apiKey' => [
         '#attributes' => [
-          'title' => $this->t("An API Key from Sms77.io is required for sending."),
+          'title' => $this->t("An API Key from seven.io is required for sending."),
         ],
         '#required' => '' === (string) $cfg['general']['apiKey'],
         '#size' => 96,

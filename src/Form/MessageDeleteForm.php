@@ -1,13 +1,13 @@
 <?php
 
-namespace Drupal\sms77api\Form;
+namespace Drupal\sevenapi\Form;
 
 use Drupal\Core\Entity\ContentEntityConfirmFormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\StringTranslation\TranslatableMarkup;
 use Drupal\Core\Url;
 
-/** @ingroup sms77api */
+/** @ingroup sevenapi */
 class MessageDeleteForm extends ContentEntityConfirmFormBase {
 
   /**
@@ -23,7 +23,7 @@ class MessageDeleteForm extends ContentEntityConfirmFormBase {
    * If the delete command is canceled, return to the contact list.
    */
   public function getCancelUrl(): Url {
-    return new Url('entity.sms77api_message.list');
+    return new Url('entity.sevenapi_message.list');
   }
 
   /**
@@ -42,12 +42,12 @@ class MessageDeleteForm extends ContentEntityConfirmFormBase {
     $entity = $this->getEntity();
     $entity->delete();
 
-    $this->logger('sms77api')->notice('@type: deleted %title.',
+    $this->logger('sevenapi')->notice('@type: deleted %title.',
       [
         '@type' => $this->entity->bundle(),
         '%title' => $this->entity->label(),
       ]);
-    $form_state->setRedirect('entity.sms77api_message.list');
+    $form_state->setRedirect('entity.sevenapi_message.list');
   }
 
 }

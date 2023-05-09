@@ -1,14 +1,13 @@
 <?php
 
-namespace Drupal\sms77api\Form;
+namespace Drupal\sevenapi\Form;
 
 use Sms77\Api\Validator\SmsValidator;
 
 /**
- * Defines a form that configures sms77api settings.
+ * Defines a form that configures sevenapi settings.
  */
 trait SmsFormTrait {
-
   public function getSmsForm($smsConfig, bool $open = FALSE): array {
     !$smsConfig && $smsConfig = [];
 

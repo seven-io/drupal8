@@ -1,13 +1,21 @@
-![Sms77.io Logo](https://www.sms77.io/wp-content/uploads/2019/07/sms77-Logo-400x79.png "Sms77.io Logo")
-# Drupal Module for the Sms77.io Gateway
+![](https://www.seven.io/wp-content/uploads/Logo.svg "seven Logo")
+
+# Drupal 8.x Module for [seven.io](https://www.seven.io)
 
 ## Installation
 
 ```shell script
-composer require sms77/drupal8
+composer require seven.io/drupal8
 ```
 
 Alternatively download the latest release and install the module manually.
 
 ### Usage
+
 Navigate the administration configuration, enter your API key and start sending!
+
+#### Support
+
+Need help? Feel free to [contact us](https://www.seven.io/en/company/contact/).
+
+[![MIT](https://img.shields.io/badge/License-MIT-teal.svg)](LICENSE)

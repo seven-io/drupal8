@@ -1,6 +1,0 @@
-configure: sms77api.admin_config
-core_version_requirement: ^8
-description: Send SMS via Sms77.io
-name: Sms77.io API
-package: Web services
-type: module

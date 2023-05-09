@@ -1,37 +1,37 @@
 <?php
 
-namespace Drupal\sms77api\Entity;
+namespace Drupal\sevenapi\Entity;
 
 use Drupal\Core\Entity\Annotation\ContentEntityType;
 use Drupal\Core\Entity\ContentEntityBase;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
-use Drupal\sms77api\MessageInterface;
+use Drupal\sevenapi\MessageInterface;
 use Drupal\user\UserInterface;
 
 /**
- * @ingroup sms77api
+ * @ingroup sevenapi
  *
  * @ContentEntityType(
- *   id = "sms77api_message",
+ *   id = "sevenapi_message",
  *   label = @Translation("Message"),
  *   admin_permission = "administer messages",
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "access" = "Drupal\sms77api\AccessController",
- *     "list_builder" = "Drupal\sms77api\Entity\Controller\MessageListBuilder",
+ *     "access" = "Drupal\sevenapi\AccessController",
+ *     "list_builder" = "Drupal\sevenapi\Entity\Controller\MessageListBuilder",
  *     "form" = {
- *       "add" = "Drupal\sms77api\Form\MessageDefaultForm",
- *       "delete" = "Drupal\sms77api\Form\MessageDeleteForm"
+ *       "add" = "Drupal\sevenapi\Form\MessageDefaultForm",
+ *       "delete" = "Drupal\sevenapi\Form\MessageDeleteForm"
  *     }
  *   },
- *   base_table = "sms77api_message",
+ *   base_table = "sevenapi_message",
  *   entity_keys = {
  *     "id" = "id"
  *   },
  *   links = {
- *     "delete-form" = "/sms77api/messages/manage/{message}/delete"
+ *     "delete-form" = "/sevenapi/messages/manage/{message}/delete"
  *   },
  *   config_export = {
  *     "config",
@@ -49,7 +49,6 @@ class Message extends ContentEntityBase implements MessageInterface {
    * the current user as the creator of the instance.
    */
   public static function preCreate(EntityStorageInterface $storage_controller, array &$values) {
-    // dd($values);
     parent::preCreate($storage_controller, $values);
 
     $values += [

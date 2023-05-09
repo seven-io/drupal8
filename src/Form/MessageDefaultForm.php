@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\sms77api\Form;
+namespace Drupal\sevenapi\Form;
 
 use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Form\FormStateInterface;
@@ -9,7 +9,7 @@ use Sms77\Api\Client;
 /**
  * Form controller for the message entity edit forms.
  *
- * @ingroup sms77api
+ * @ingroup sevenapi
  */
 class MessageDefaultForm extends ContentEntityForm {
 
@@ -28,7 +28,7 @@ class MessageDefaultForm extends ContentEntityForm {
 
   /** {@inheritdoc} */
   public function save(array $form, FormStateInterface $state) {
-    /** @var \Drupal\sms77api\Entity\Message $msg */
+    /** @var \Drupal\sevenapi\Entity\Message $msg */
     $msg = $this->getEntity();
     $sms = $state->getValue('sms');
     $msg->set('sms', serialize($sms));
@@ -42,7 +42,7 @@ class MessageDefaultForm extends ContentEntityForm {
 
     $msg->save();
 
-    $state->setRedirect('entity.sms77api_message.list');
+    $state->setRedirect('entity.sevenapi_message.list');
   }
 
   /**

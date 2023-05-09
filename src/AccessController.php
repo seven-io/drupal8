@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\sms77api;
+namespace Drupal\sevenapi;
 
 use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Entity\EntityAccessControlHandler;
@@ -11,8 +11,8 @@ use Drupal\Core\Session\AccountInterface;
  * Defines an access controller for the message entity.
  * We set this class to be the access controller in Message's entity annotation.
  *
- * @see Drupal\sms77api\Entity\Message
- * @ingroup sms77api
+ * @see Drupal\sevenapi\Entity\Message
+ * @ingroup sevenapi
  */
 class AccessController extends EntityAccessControlHandler {
 
