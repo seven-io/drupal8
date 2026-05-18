@@ -4,38 +4,39 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "060c046958ca53e9e423b4f3592c7165",
+    "content-hash": "1a3680cd6260ddc39e2f251e48ca50e5",
     "packages": [
         {
             "name": "sms77/api",
-            "version": "1.1.0",
+            "version": "v8.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sms77io/php-api.git",
-                "reference": "dbd3b3e33febaa4227542150a2affbdf92f3681b"
+                "url": "https://github.com/seven-io/php-client.git",
+                "reference": "ee88e01002d729e7fab6b92f316661e1d339752b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sms77io/php-api/zipball/dbd3b3e33febaa4227542150a2affbdf92f3681b",
-                "reference": "dbd3b3e33febaa4227542150a2affbdf92f3681b",
+                "url": "https://api.github.com/repos/seven-io/php-client/zipball/ee88e01002d729e7fab6b92f316661e1d339752b",
+                "reference": "ee88e01002d729e7fab6b92f316661e1d339752b",
                 "shasum": ""
             },
             "require": {
                 "ext-ctype": "*",
                 "ext-curl": "*",
+                "ext-json": "*",
                 "ext-mbstring": "*",
-                "php": ">=5.6.0"
+                "php": ">=8.2"
             },
             "require-dev": {
-                "ext-json": "*",
                 "ext-simplexml": "*",
                 "ext-soap": "*",
-                "phpunit/phpunit": "5.7.27"
+                "ext-xdebug": "*",
+                "phpunit/phpunit": "^11"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Sms77\\Api\\": "src/"
+                    "Seven\\Api\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -44,29 +45,45 @@
             ],
             "authors": [
                 {
-                    "name": "André Matthies",
-                    "email": "a.matthies@sms77.io",
-                    "homepage": "http://www.sms77.io",
+                    "name": "seven communications GmbH & Co. KG",
+                    "email": "support@seven.io",
+                    "homepage": "https://www.seven.io",
                     "role": "Developer"
                 }
             ],
-            "description": "A simple PHP library for making CURL requests to the sms77.io gateway.",
-            "homepage": "https://github.com/sms77io/php-api",
+            "description": "Official API Client for requesting the seven.io messaging Gateway.",
+            "homepage": "https://github.com/seven-io/php-client",
             "keywords": [
                 "2fa",
+                "cnam",
                 "gateway",
-                "sms"
+                "hlr",
+                "mnp",
+                "rcs",
+                "sms",
+                "text2speech",
+                "tts"
             ],
-            "time": "2020-02-13T14:39:27+00:00"
+            "support": {
+                "docs": "https://github.com/seven-io/php-client",
+                "email": "support@seven.io",
+                "issues": "https://github.com/seven-io/php-client/issues",
+                "rss": "https://www.seven.io/en/feed/",
+                "source": "https://github.com/seven-io/php-client"
+            },
+            "abandoned": "seven.io/api",
+            "time": "2026-02-05T10:36:17+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": [],
-    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform": {
+        "ext-json": "*"
+    },
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
 }
